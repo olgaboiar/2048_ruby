@@ -13,7 +13,7 @@ RSpec.describe ConsoleUI do
       expect(@ui).to be_kind_of(UI)
     end
 
-    it 'outputs the message to console' do
+    it 'calls console print method' do
         expect(@console).to receive(:print).with("my message")
         @ui.print("my message")
     end
